@@ -58,4 +58,4 @@ Download stats for this NPM package
 
 ## License
 
-Svelte Infinite Scroll is open source software [licensed as MIT](https://github.com/andrelmlins/svelte-resize-observer/blob/master/LICENSE).
+Svelte Resize Observer is open source software [licensed as MIT](https://github.com/andrelmlins/svelte-resize-observer/blob/master/LICENSE).
