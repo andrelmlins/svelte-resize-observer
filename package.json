@@ -1,6 +1,7 @@
 {
   "name": "svelte-resize-observer",
   "version": "0.1.0",
+  "description": "Element resize observer to Svelte",
   "repository": "https://github.com/andrelmlins/svelte-resize-observer",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "module": "dist/index.mjs",
