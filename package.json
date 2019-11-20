@@ -1,0 +1,36 @@
+{
+  "name": "svelte-resize-observer",
+  "version": "0.1.0",
+  "repository": "https://github.com/andrelmlins/svelte-resize-observer",
+  "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "homepage": "https://svelte-resize-observer.netlify.com/",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "rollup": "^1.27.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.1",
+    "svelte": "^3.15.0"
+  },
+  "dependencies": {
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/andrelmlins/svelte-resize-observer/issues"
+  },
+  "keywords": [
+    "svelte",
+    "resize",
+    "observer"
+  ]
+}
