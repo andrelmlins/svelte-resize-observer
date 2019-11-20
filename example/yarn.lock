@@ -1458,10 +1458,10 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svelte-resize-observer@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/svelte-resize-observer/-/svelte-resize-observer-0.1.1.tgz#6fd0d43687f5e1720445f107494ff575802fc91c"
-  integrity sha512-9PjInbxb+DkrPvAS1dFyk1k2pJac9S41iwq31aG6ZavTBqdQvUdNp77UVpwCvc/kxReW0HQfR7Gk0wTgysMJwg==
+svelte-resize-observer@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/svelte-resize-observer/-/svelte-resize-observer-0.1.2.tgz#fb2282e147818d574ab65936b5ec0ed782ee0c92"
+  integrity sha512-GfbMS5kKi6QxKLtMJDNJUM93/Ghgw5B/9+ESNWReYorGoZ187u3/YfmIwHtQ2i3v8qYgOSdIl+0Ei2k8qOExIw==
   dependencies:
     resize-observer-polyfill "^1.5.1"
 
