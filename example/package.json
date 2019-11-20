@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "sirv-cli": "^0.4.4",
-    "svelte-resize-observer": "^0.1.0"
+    "svelte-resize-observer": "^0.1.1"
   },
   "scripts": {
     "build": "rollup -c",
