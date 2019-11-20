@@ -8,13 +8,15 @@
   let component;
   let RO;
 
+  onMount(() => {
+    RO = new ResizeObserver(e => {
+      dispatch("resize", e[0]);
+    });
+  });
+
   $: {
     if (component || elementResize) {
       const element = elementResize ? elementResize : component.parentNode;
-
-      RO = new ResizeObserver(e => {
-        dispatch("resize", e[0]);
-      });
       RO.observe(element);
     }
   }
