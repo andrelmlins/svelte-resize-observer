@@ -113,10 +113,10 @@ rollup-pluginutils@^2.3.3, rollup-pluginutils@^2.8.1:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^1.27.8:
-  version "1.27.8"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.27.8.tgz#94288a957af9f4c2380b73a17494d87705997d0f"
-  integrity sha512-EVoEV5rAWl+5clnGznt1KY8PeVkzVQh/R0d2s3gHEkN7gfoyC4JmvIVuCtPbYE8NM5Ep/g+nAmvKXBjzaqTsHA==
+rollup@^1.27.12:
+  version "1.27.12"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.27.12.tgz#cf84db4b4edaf187eaba95232f34de7cd4d22d9c"
+  integrity sha512-51iR7n6NQfdQJlRrIktaGmkdt395A8Vue7CdnlrK6UhY9DY2GaKsTdljWeXisJuZh+w90Gz8VFNh5X+yxP20oQ==
   dependencies:
     "@types/estree" "*"
     "@types/node" "*"
@@ -127,7 +127,7 @@ sourcemap-codec@^1.4.4:
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.6.tgz#e30a74f0402bad09807640d39e971090a08ce1e9"
   integrity sha512-1ZooVLYFxC448piVLBbtOxFcXwnymH9oUF8nRd3CuYDVvkRBxRl6pB4Mtas5a4drtL+E8LDgFkQNcgIw6tc8Hg==
 
-svelte@^3.16.0:
-  version "3.16.0"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.16.0.tgz#7ead284547240fcbcb985c73473dce811315fd15"
-  integrity sha512-k7nCQTd9/rGOi25iv/sBeJe2W89hK2lcaUsmUQqikH0Tye7Gh/tvvF9LuNTSF+dQY/isNX+g8K9fJf+5jMLfxw==
+svelte@^3.16.4:
+  version "3.16.4"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.16.4.tgz#a14369c79d3a007bb1e13c8b52630efeca894096"
+  integrity sha512-+9k0fWp6q2AW0Niap+AIjERoRV9ZTj2yr+33JtjYHAxFRwTGdsy6UYnNThyrUNZPBHdlnbTuEt2V8p07jJGiZQ==
