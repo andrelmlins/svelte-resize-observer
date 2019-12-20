@@ -17,7 +17,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.1",
-    "svelte": "^3.16.4"
+    "svelte": "^3.16.5"
   },
   "dependencies": {
     "resize-observer-polyfill": "^1.5.1"
