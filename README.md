@@ -43,7 +43,7 @@ yarn install && yarn start
 
 ## Properties
 
-Raw component props (before transform):
+Component props:
 
 | Prop          | Type | Description            |
 | ------------- | ---- | ---------------------- |
