@@ -39,7 +39,7 @@ export default [
   },
   {
     input: "src/lib/index.svelte",
-    output: { file: pkg.main, format: "umd", name: "InfiniteScroll" },
+    output: { file: pkg.main, format: "umd", name: "ResizeObserver" },
     plugins: [svelte(), resolve(), commonjs()]
   },
   {
