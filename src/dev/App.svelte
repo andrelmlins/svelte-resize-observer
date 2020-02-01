@@ -1,5 +1,5 @@
 <script>
-  import SvelteResizeObserver from "svelte-resize-observer";
+  import SvelteResizeObserver from "../lib/index.svelte";
   import allLanguages from "./languages.js";
 
   let count = 20;
