@@ -18,7 +18,7 @@ Local demo:
 
 ```
 git clone https://github.com/andrelmlins/svelte-resize-observer.git
-cd svelte-resize-observer/example
+cd svelte-resize-observer
 yarn install && yarn start
 ```
 
