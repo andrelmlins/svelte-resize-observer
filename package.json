@@ -13,14 +13,21 @@
     "README.md"
   ],
   "devDependencies": {
-    "sirv-cli": "^0.4.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/svelte": "^1.11.0",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
     "rollup": "^1.31.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.2.0",
-    "svelte": "^3.18.2"
+    "sirv-cli": "^0.4.4",
+    "svelte": "^3.18.2",
+    "svelte-jester": "^1.0.4"
   },
   "dependencies": {
     "resize-observer-polyfill": "^1.5.1"
@@ -28,10 +35,25 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public",
+    "test": "jest src/lib",
+    "coverage": "npm run test --coverage"
   },
   "bugs": {
     "url": "https://github.com/andrelmlins/svelte-resize-observer/issues"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.svelte$": "svelte-jester"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "svelte"
+    ]
   },
   "keywords": [
     "svelte",
