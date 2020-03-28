@@ -1,5 +1,5 @@
 <script>
-  import SvelteResizeObserver from "../lib/index.svelte";
+  import ResizeObserver from "../lib/ResizeObserver.svelte";
   import allLanguages from "./languages.js";
 
   let count = 20;
@@ -90,7 +90,7 @@
         {#each languages as language}
           <div class="item">{language}</div>
         {/each}
-        <SvelteResizeObserver
+        <ResizeObserver
           on:resize={e => (logs = [...logs, `Resize: ClienteHeight: ${e.detail.target.clientHeight} / ScrollHeight: ${e.detail.target.scrollHeight}`])} />
       </div>
     </div>

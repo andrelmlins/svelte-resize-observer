@@ -38,12 +38,12 @@ export default [
     }
   },
   {
-    input: "src/lib/index.svelte",
+    input: "src/lib/ResizeObserver.svelte",
     output: { file: pkg.main, format: "umd", name: "ResizeObserver" },
     plugins: [svelte(), resolve(), commonjs()]
   },
   {
-    input: "src/lib/index.svelte",
+    input: "src/lib/ResizeObserver.svelte",
     output: { file: pkg.module, format: "es" },
     external: ["svelte/internal"],
     plugins: [svelte(), commonjs()]

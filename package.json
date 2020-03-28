@@ -4,11 +4,13 @@
   "description": "Element resize observer to Svelte",
   "repository": "https://github.com/andrelmlins/svelte-resize-observer",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
+  "svelte": "src/lib/ResizeObserver.svelte",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "license": "MIT",
   "homepage": "https://svelte-resize-observer.netlify.com/",
   "files": [
+    "src/lib/ResizeObserver.svelte",
     "dist",
     "README.md"
   ],

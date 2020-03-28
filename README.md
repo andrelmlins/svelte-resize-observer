@@ -12,6 +12,8 @@ npm i svelte-resize-observer
 yarn add svelte-resize-observer
 ```
 
+<em>Note: to use this library in sapper, install as devDependency. See the [link](https://github.com/sveltejs/sapper-template#using-external-components).</em>
+
 ## Demo [Link](https://svelte-resize-observer.netlify.com/)
 
 Local demo:
@@ -24,9 +26,11 @@ yarn install && yarn start
 
 ## Examples
 
+An example of how to use the library:
+
 ```js
 <script>
-  import SvelteResizeObserver from "svelte-resize-observer";
+  import ResizeObserver from "svelte-resize-observer";
 </script>
 
 <style>
@@ -37,7 +41,7 @@ yarn install && yarn start
 </style>
 
 <div>
-  <SvelteResizeObserver on:resize={(e) => console.log(e.detail.target)} />
+  <ResizeObserver on:resize={(e) => console.log(e.detail.target)} />
 </div>
 ```
 
