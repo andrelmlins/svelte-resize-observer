@@ -9,6 +9,12 @@ body {
   background-color: #1a237e;
 }
 
+/* GITHUB corner */
+.github-corner {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }

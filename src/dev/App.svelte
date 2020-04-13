@@ -13,16 +13,19 @@
   main {
     display: flex;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 16px;
+    box-sizing: border-box;
   }
 
   h1 {
     color: white;
     text-shadow: 1px 1px 2px black;
     margin: 0;
+    text-align: center;
   }
 
   h4 {
@@ -32,6 +35,7 @@
   }
 
   .root {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -78,6 +82,18 @@
   ul {
     font-size: 12px;
     margin: 0px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .root {
+      flex-direction: column;
+    }
+
+    .card {
+      max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 16px;
+    }
   }
 </style>
 
