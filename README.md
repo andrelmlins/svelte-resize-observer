@@ -21,7 +21,7 @@ Local demo:
 ```
 git clone https://github.com/andrelmlins/svelte-resize-observer.git
 cd svelte-resize-observer
-yarn install && yarn start
+npm install && npm run dev
 ```
 
 ## Examples
