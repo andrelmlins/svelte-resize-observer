@@ -1,13 +1,45 @@
-<script>
+<script lang="ts">
   import ResizeObserver from "../lib/ResizeObserver.svelte";
   import allLanguages from "./languages.js";
 
-  let count = 20;
-  let languages = [];
-  let logs = [];
+  let count: number = 20;
+  let languages: string[] = [];
+  let logs: string[] = [];
 
   $: languages = allLanguages.slice(0, count);
 </script>
+
+<main>
+  <h1>Svelte Resize Observer</h1>
+  <h4>Element resize observer to Svelte</h4>
+  <div class="root">
+    <div class="card">
+      <div class="list">
+        {#each languages as language}
+          <div class="item">{language}</div>
+        {/each}
+        <ResizeObserver
+          on:resize={(element) =>
+            (logs = [
+              ...logs,
+              `Resize: ClienteHeight: ${element.detail.clientHeight} / ScrollHeight: ${element.detail.scrollHeight}`,
+            ])}
+        />
+      </div>
+    </div>
+    <div class="card" style="padding:20px">
+      <button on:click={() => count++}>Add</button>
+      <button on:click={() => count--}>Remove</button>
+      <br />
+      <h3>Resizes</h3>
+      <ul>
+        {#each logs as log}
+          <li>{log}</li>
+        {/each}
+      </ul>
+    </div>
+  </div>
+</main>
 
 <style>
   main {
@@ -96,30 +128,3 @@
     }
   }
 </style>
-
-<main>
-  <h1>Svelte Resize Observer</h1>
-  <h4>Element resize observer to Svelte</h4>
-  <div class="root">
-    <div class="card">
-      <div class="list">
-        {#each languages as language}
-          <div class="item">{language}</div>
-        {/each}
-        <ResizeObserver
-          on:resize={e => (logs = [...logs, `Resize: ClienteHeight: ${e.detail.target.clientHeight} / ScrollHeight: ${e.detail.target.scrollHeight}`])} />
-      </div>
-    </div>
-    <div class="card" style="padding:20px">
-      <button on:click={() => count++}>Add</button>
-      <button on:click={() => count--}>Remove</button>
-      <br />
-      <h3>Resizes</h3>
-      <ul>
-        {#each logs as log}
-          <li>{log}</li>
-        {/each}
-      </ul>
-    </div>
-  </div>
-</main>
