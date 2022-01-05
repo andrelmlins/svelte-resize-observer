@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-typescript": "^8.2.5",
     "@testing-library/jest-dom": "^5.11.0",
     "@testing-library/svelte": "^3.0.0",

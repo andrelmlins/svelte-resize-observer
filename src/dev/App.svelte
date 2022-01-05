@@ -1,6 +1,6 @@
 <script lang="ts">
   import ResizeObserver from "../lib/ResizeObserver.svelte";
-  import allLanguages from "./languages.js";
+  import allLanguages from "./languages.json";
 
   let count: number = 20;
   let languages: string[] = [];
